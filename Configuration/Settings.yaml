@@ -1,0 +1,14 @@
+Neos:
+  Neos:
+    userInterface:
+      translation:
+        autoInclude:
+          DIU.Piwik:
+            - 'NodeTypes/*'
+    fusion:
+      autoInclude:
+        DIU.Piwik: true
+Diu:
+  Piwik:
+    url: 'your-piwik-url'
+    siteId: 'your-site-id'

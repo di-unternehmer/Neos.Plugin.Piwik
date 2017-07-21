@@ -1,0 +1,4 @@
+namespace: Fusion = Neos.Fusion
+namespace: DIU = DIU.PIWIK
+
+include: **/*.fusion
