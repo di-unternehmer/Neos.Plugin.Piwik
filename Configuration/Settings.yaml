@@ -8,7 +8,8 @@ Neos:
     fusion:
       autoInclude:
         DIU.Piwik: true
-Diu:
+
+DIU:
   Piwik:
     url: 'your-piwik-url'
     siteId: 'your-site-id'

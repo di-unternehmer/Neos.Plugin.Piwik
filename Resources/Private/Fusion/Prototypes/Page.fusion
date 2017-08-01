@@ -1,4 +1,4 @@
-prototype(Neos.NodeTypes:Page.Document) {
+prototype(Neos.Neos:Page) {
 	body.javascripts {
         # include piwik code into body
 		piwik = Neos.Fusion:Tag {
