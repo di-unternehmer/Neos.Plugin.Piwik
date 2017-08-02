@@ -1,11 +1,9 @@
 prototype(Neos.Neos:Page) {
-	body.javascripts {
-        # include piwik code into body
-		piwik = Neos.Fusion:Tag {
-			tagName = 'script'
-			attributes.type = 'text/javascript'
-            content = ${"var _paq = _paq || [];_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function() {var u='" + Configuration.setting('Diu.Piwik.url') + "';_paq.push(['setTrackerUrl', u+'piwik.php']);_paq.push(['setSiteId', " + Configuration.setting('Diu.Piwik.siteId') + "]);var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);})();"}
-		}
-		piwik.@position = 'end 10'
+	piwik = Neos.Fusion:Template {
+		templatePath = 	'resource://DIU.Piwik/Private/Templates/FusionObjects/Piwik.html'
+		domain 		 = 	${ Configuration.setting('DIU.Piwik.domain') }
+		url 		 = 	${ Configuration.setting('DIU.Piwik.url') }
+		siteId 		 =	${ Configuration.setting('DIU.Piwik.siteId') }
+		@position 	 = 	'before closingBodyTag'
 	}
 }

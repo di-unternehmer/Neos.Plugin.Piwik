@@ -11,5 +11,6 @@ Neos:
 
 DIU:
   Piwik:
+    domain: 'your-website-domain'
     url: 'your-piwik-url'
     siteId: 'your-site-id'
